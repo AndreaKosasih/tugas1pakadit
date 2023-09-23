@@ -22,7 +22,7 @@ int main () {
     Jam j; 
     
     cout << "Masukkan Waktu Sistem 12 Jam" << endl;
-    cout << "Masukkan jam:menit:detik AM/PM: "; cin >> j.jj; cin >> j.titikDua; cin >> j.mm; cin >> j.titikDua; cin >> j.dd; cin >> j.ap; 
+    cout << "Masukkan jam:menit:detik AM/PM: "; cin >> j.jj >> j.titikDua >> j.mm >> j.titikDua >> j.dd >> j.ap; 
 
     cout << "Jam dalam format 12 Jam adalah: " << setw(2) << setfill('0') << j.jj << ":" 
                                                << setw(2) << setfill('0') << j.mm << ":" 
@@ -34,9 +34,9 @@ int main () {
         j.jj = 0;
     }
 
-    cout << "Jam dalam format 24 Jam adalah = " << setw(2) << setfill('0') << j.jj << ":" 
-                                                << setw(2) << setfill('0') << j.mm << ":"
-                                                << setw(2) << setfill('0') << j.dd << endl;
+    cout << "Jam dalam format 24 Jam adalah: " << setw(2) << setfill('0') << j.jj << ":" 
+                                               << setw(2) << setfill('0') << j.mm << ":"
+                                               << setw(2) << setfill('0') << j.dd << endl;
     return 0;
 }
 
