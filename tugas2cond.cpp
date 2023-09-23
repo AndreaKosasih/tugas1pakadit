@@ -30,9 +30,7 @@ int main () {
                                                << j.ap << endl;
     if (j.jj != 12 && j.ap == "PM") {
         j.jj += 12;
-    }
-
-    if (j.jj == 12 && j.ap == "AM") {
+    } else if (j.jj == 12 && j.ap == "AM") {
         j.jj = 0;
     }
 
