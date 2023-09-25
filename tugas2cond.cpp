@@ -34,6 +34,18 @@ int main () {
         j.jj = 0;
     }
 
+    while (j.dd >= 60){
+        j.dd = j.dd - 60;
+        j.mm = j.mm + 1;
+    } 
+    while (j.mm >= 60) {
+        j.mm = j.mm - 60; 
+        j.jj = j.jj + 1; 
+    }
+    while (j.jj >= 24) {
+        j.jj = j.jj - 24; 
+    }
+    
     cout << "Jam dalam format 24 Jam adalah: " << setw(2) << setfill('0') << j.jj << ":" 
                                                << setw(2) << setfill('0') << j.mm << ":"
                                                << setw(2) << setfill('0') << j.dd << endl;
